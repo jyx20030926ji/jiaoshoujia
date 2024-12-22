@@ -1,0 +1,42 @@
+logging:
+  level:
+    com.jyx.forum.mapper: DEBUG
+
+jyx:
+  alioss:
+    endpoint:
+    access-key-id:
+    access-key-secret:
+    bucket-name:
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:
+      database: 0
+      jedis:
+        pool:
+          enabled: true
+          max-active: 10
+          max-idle: 5
+          min-idle: 2
+          max-wait: 10000
+  datasource:
+    url: jdbc:mysql://localhost:3306/
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      pool-name: HikariCP
+      repositories:
+        enabled: true
+
+
+
